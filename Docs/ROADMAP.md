@@ -4,6 +4,12 @@
 
 Pre-production and technical preparation.
 
+Confirmed:
+
+- Development workstation: Dell Precision 7780, i9-13950HX, 64 GB RAM, RTX 1000 Ada 6 GB.
+- Baseline target tablet: Samsung Galaxy Tab S8 and newer.
+- Primary performance floor: stable 30 FPS on the Galaxy Tab S8.
+
 The existing Unicorn Valley game remains the active main project. This repository is an experimental 3D prototype and should not block or replace normal development.
 
 ## UV3D-P0 — Technical Foundation
@@ -12,19 +18,21 @@ Goal: establish a reproducible Unreal development environment and source-control
 
 Planned outcomes:
 
-- Confirm development workstation specification and permitted configuration.
-- Confirm target tablet specification.
-- Install and configure the agreed Unreal Engine version.
+- Validate the Precision dual-boot layout against current Intune, BitLocker and compliance policies.
+- Establish the separate development Windows installation.
+- Verify the Galaxy Tab S8 baseline device and enable development deployment.
+- Install and configure Unreal Engine 5.8.
 - Configure C++ development tooling.
-- Configure Android development/deployment tooling.
+- Configure Android Vulkan development/deployment tooling.
 - Configure Git LFS and final Unreal ignore rules.
 - Establish project folder and naming conventions.
 - Create the initial Unreal C++ project.
+- Configure the tablet-first Mobile Deferred rendering baseline and scalability profiles.
 - Produce a minimal packaged Android build.
-- Verify deployment to the target tablet.
-- Record baseline performance and build size.
+- Verify deployment to the Galaxy Tab S8.
+- Record baseline performance, thermals and build size.
 
-Exit gate: a minimal Unreal project builds, packages and launches successfully on the target tablet.
+Exit gate: a minimal Unreal project builds, packages and launches successfully on the Galaxy Tab S8, while the corporate Precision Windows installation remains compliant and unaffected.
 
 ## UV3D-P1 — Greybox Sunbeam
 
@@ -43,7 +51,7 @@ Planned outcomes:
 - Basic NPC placeholders.
 - Early tablet build and performance test.
 
-Exit gate: Nova can move reliably around a recognisable greybox Sunbeam Village on the target tablet at the required performance floor.
+Exit gate: Nova can move reliably around a recognisable greybox Sunbeam Village on the Galaxy Tab S8 at the required performance floor.
 
 ## UV3D-P2 — Nova Character
 
@@ -76,7 +84,7 @@ Planned outcomes:
 - Lighting and atmosphere.
 - Wind and environmental movement.
 - Performance-conscious particle effects.
-- Quality scalability between tablet and development PC.
+- Quality scalability between Tab S8 baseline, newer tablets and development PC.
 
 Exit gate: representative screenshots and an on-device build demonstrate the intended visual direction without dropping below the agreed performance floor.
 
@@ -106,7 +114,7 @@ Planned outcomes:
 - UI and interaction polish.
 - Animation polish.
 - Visual optimisation.
-- Tablet profiling and optimisation.
+- Tab S8 profiling, thermal testing and optimisation.
 - Packaged release-style build.
 - Final build-size and hardware assessment.
 - Workflow assessment.
